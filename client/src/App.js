@@ -10,7 +10,7 @@ import MainLayout from './components/layout/MainLayout';
 import Home from './components/pages/Home/HomePages';
 import Posts from './components/pages/Posts/PostsPage';
 import Contact from './components/pages/Contact/ContactPage';
-import SinglePosts from './components/pages/SinglePosts/SinglePost';
+import Post from './components/pages/Post/SinglePost';
 import NewPosts from './components/pages/NewPosts/NewPost';
 import NotFound from './components/pages/NotFound/NotFoundPage';
 
@@ -27,7 +27,7 @@ class App extends React.Component {
           <Route path="/posts" exact component={Posts} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/NewPosts" exact component={NewPosts} />
-          <Route path="/SinglePosts" exact component={SinglePosts} />
+          <Route path="/Post" exact component={Post} />
           <Route component={NotFound} />
         </Switch>
       </MainLayout>
