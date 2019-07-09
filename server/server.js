@@ -19,11 +19,8 @@ app.get('/api/posts', (req, res) => {
   });
 
 
-  app.get('/api/SinglePosts/test', (req, res) => {
-    const data = [
-      { id: '1adfasf', title: 'Lorem Ipsum', content: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.' },
-      { id: '2evxc34', title: 'Lorem Ipsum II', content: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.' },
-    ]
+  app.get('/api/post/:id/', (req, res) => {
+     id: '1adfasf',
     res.json(data);
   });
 

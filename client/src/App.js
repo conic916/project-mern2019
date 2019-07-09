@@ -27,7 +27,7 @@ class App extends React.Component {
           <Route path="/posts" exact component={Posts} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/NewPosts" exact component={NewPosts} />
-          <Route path="/Post" exact component={Post} />
+          <Route path="/Post/:id" exact component={Post} />
           <Route component={NotFound} />
         </Switch>
       </MainLayout>
